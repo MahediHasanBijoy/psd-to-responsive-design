@@ -1,0 +1,160 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	width: 100%;
+	background: #23232e;
+	color: #fff;
+	text-align: center;
+}
+
+header img.logo{
+	width: 7%;
+	margin: 55px 0;
+}
+
+header img.icon{
+	width: 3%;
+	margin: 100px 0 20px 0;
+}
+h2{
+	font-size: 50px;
+	text-transform: uppercase;
+}
+
+/* what i do section */
+.whatido{
+	background: url('images/background.png');
+	text-align: center;
+	padding: 40px 25%;
+	overflow: hidden;
+}
+
+.col{
+	width: 31.33%;
+	padding: 1%;
+	float: left;
+	text-align: left;
+
+}
+
+/* my work section */
+.mywork{
+	text-align: center;
+	background: #23232e;
+	padding: 20px 25%;
+	color: #fff;
+	overflow: hidden;
+
+}
+.mywork .menu{
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+.mywork .menu ul{
+	list-style: none;
+}
+
+.mywork ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.mywork .menu ul li{
+	float: left;
+	margin: 0 20px;
+}
+
+.mywork .menu ul li .active{
+	border-bottom: 1px solid #7b77c9;
+}
+
+.mywork .row1 .col1 img{
+	width: 100%;
+}
+
+.mywork .row1 .col1{
+	float: left;
+	width: 31.33%;
+	margin: 1%;
+}
+
+
+
+button{
+	height: 40px;
+	width: 150px;
+	border-radius: 5px;
+	background: #7b77c9;
+	border: none;
+	color: #fff;
+	margin: 20px 0;
+}
+
+
+
+.photography{
+	padding: 20px 25%;
+	text-align: center;
+	background: url('images/background.png');
+}
+
+.photography p{
+	padding: 0 40px;
+	font-size: 23px;
+}
+
+.photography .row2{
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.photography .row2 .col2{
+	width: 31.33%;
+	margin: 1%;
+	float: left;
+}
+
+.photography .row2 .col2 img{
+	width: 100%;
+}
+
+
+.subscribe{
+	background: #23232e;
+	text-align: center;
+	color: #fff;
+	padding: 170px 25%;
+}
+
+.subscribe img{
+	width: 55px;
+}
+
+.subscribe p{
+	padding: 10px 150px;
+}
+
+.subscribe input{
+	height: 35px;
+	width: 250px;
+	border-radius: 5px;
+}
+
+footer{
+	text-align: center;
+	color: #a8a7a2;
+	font-size: 13px;
+	margin-bottom: 60px;
+}
+footer .list{
+	text-align: center;
+	margin: 50px 25%;
+}
+
+footer .list img{
+	width: 25px;
+	padding: 15px;
+	margin-bottom: 15px;
+}
