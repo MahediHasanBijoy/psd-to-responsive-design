@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Lato&family=Source+Code+Pro:ital,wght@1,200&display=swap');
+
 body{
 	margin: 0;
 	padding: 0;
+	font-family: 'Lato', sans-serif;
 }
 
 .sub-head{
@@ -89,10 +92,89 @@ header img{
 	height: 62px;
 }
 
+.intro .three-dots{
+	text-align: center;
+	color: white;
+	padding-bottom: 30px;
+}
+
+.intro .three-dots i{
+	padding-left: 7px;
+}
+
 
 
 .featured-work .row {
-	padding: 40px 20px;
+	padding: 80px 40px;
 	display: flex;
 	justify-content: space-between;
+}
+
+.featured-work .row .col{
+	text-align: center;
+	width: 20%;
+}
+
+.featured-work .row .col i{
+	background: #f9f8f3;
+	color: #bea44d;
+	font-size: 25px;
+	height: 30px;
+	width: 30px;
+	padding: 15px;
+	border: 1px solid #bea44d;
+	border-radius: 50%;
+}
+
+.featured-work .row .col h2{
+	font-size: 20px;
+	color: #bea44d;
+	margin: 0;
+	padding-top: 20px;
+}
+
+.featured-work .row .col p{
+	font-size: 16px;
+	margin: 0;
+	color: #757c80;
+}
+
+.featured-work .text-center{
+	text-align: center;
+}
+
+.featured-work .text-center h2{
+	color: #916c02;
+	font-size: 45px;
+}
+
+.featured-work .text-center p{
+	color: #757c80;
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+}
+
+
+.slider{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 30px;
+}
+
+.slider i{
+	margin: 0 50px;
+	font-size: 45px;
+	padding: 15px;
+	height: 40px;
+	width: 40px;
+	border: 1px solid #bea44d;
+	color: #bea44d;
+	border-radius: 15%;
+}
+
+.slider .fa-angle-right{
+	background: #bea44d;
+	color: white
 }
