@@ -27,7 +27,7 @@ button{
 header nav{
 	display: flex;
 	justify-content: space-around;
-	background: rgba(0, 0, 0, .8);
+	background: rgba(0, 0, 0, .5);
 	padding: 20px 0;
 	position: fixed;
 	top: 0;
@@ -183,9 +183,7 @@ header .content::after{
 	border-radius: 50%;
 	background: rgba(0, 0, 0, 1.0);
 }
-.about .row .col1 .overlay ul li{
 
-}
 .about .row .col1 .overlay ul li:hover{
 	background: white;
 	color: black;
@@ -263,10 +261,12 @@ header .content::after{
 .services .row .col p{
 	font-size: 14px;
 }
+
+
 /* Skill section */
 .skill{
-	padding: 30px 15%;
-	background: #ced4de;
+	padding: 50px 15%;
+	background: #e4e6eb;
 }
 
 .skill .text-content{
@@ -384,4 +384,418 @@ header .content::after{
 	top: 0;
 	left: 0;
 	z-index: -1;
+}
+
+
+/* Our Portfolio section */
+
+.portfolio .list{
+	text-align: center;
+	
+}
+.portfolio .list a{
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+	color: #5b5e63;
+	padding: 0 15px;
+}
+
+.portfolio .row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 40px 0;
+}
+
+.portfolio .row .col{
+	width: 26%;
+	margin: 1%;
+	position: relative;
+}
+
+.portfolio .row .col img{
+	width: 100%;
+	height: 100%;
+}
+
+.portfolio .row .col .hover-img{
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 0, 0, .3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: white;
+	font-size: 30px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.portfolio .row .col img:hover + .hover-img{
+	display: flex;
+}
+
+
+/* My Team section */
+
+.my-team{
+	background: #e4e6eb;
+	padding-bottom: 50px;
+}
+
+.my-team .row{
+	display: flex;
+	justify-content: center
+}
+.my-team .row .col{
+	width: 17%;
+	margin: 1%;
+	position: relative;
+	border-bottom: 6px solid red;
+}
+.my-team .row .col img{
+	width: 100%;
+	height: 100%;
+}
+
+.my-team .row .col .hover-img{
+	height: 100%;
+	width: 100%;
+	background: rgba(255, 0, 0, .3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: white;
+	display: none;
+
+}
+.my-team .row .col img:hover + .hover-img{
+	display: block;
+}
+.my-team .row .col .hover-img .overlay{
+	background: rgba(255, 0, 0, .8);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.my-team .row .col .hover-img .overlay ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+}
+
+.my-team .row .col .hover-img .overlay ul li a{
+	color: white;
+	margin: 3px;
+}
+
+/* Shipon kormoker section */
+.shipon-kormoker{
+	text-align: center;
+	padding: 70px 25%;
+	background: url('images/bg3.jpg');
+	color: white;
+	position: relative;
+	z-index: 1;
+}
+
+.shipon-kormoker::after{
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, .5);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+.shipon-kormoker h4{
+	margin: 10px;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.shipon-kormoker p{
+	font-size: 14px;
+	line-height: 20px;
+}
+
+
+/* Latest Blog Section */
+
+.blog .row{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+.blog .row .col{
+	width: 25%;
+	margin: 1%;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, .5);
+
+}
+
+.blog .row .col img{
+	width: 100%;
+	border-bottom: 5px solid rgba(0, 0, 0, .8);
+}
+.blog .row .col .desc{
+	margin: 10px;
+
+}
+
+.blog .row .col .desc h2{
+	font-size: 20px;
+	font-weight: 600;
+	color: #292828;
+}
+.blog .row .col .desc h6{
+	font-size: 12px;
+	font-weight: 400;
+	margin: 10px 0;
+}
+.blog .row .col .desc h6 svg{
+	color: red;
+	font-size: 10px;
+}
+.blog .row .col .desc p{
+	font-size: 15px;
+}
+.blog .row .col .desc button{
+	background: rgba(0, 0, 0, .8);
+	width: 25%;
+	height: 25px;
+	font-size: 10px;
+	padding: 0;
+	margin: 10px 0;
+}
+
+/* Contact Section */
+.contact{
+	background: url('images/bg4.jpg');
+	padding: 0 20%;
+	position: relative;
+	z-index: 1;
+}
+.contact .header-text h2{
+	color: white;
+}
+.contact .header-text hr{
+	width: 15%;
+}
+.contact form{
+/* 	display: flex;
+	flex-wrap: wrap; */
+}
+
+.contact form input{
+	padding: 10px 10px;
+	margin-right: 1%;
+	width: 46%;
+	background: none;
+	border: 1px solid white;
+	border-radius: 6px;
+	font-size: 15px;
+}
+.contact form input::placeholder,
+.contact form textarea::placeholder{
+	color: white;
+
+}
+
+.contact form textarea{
+	width: 96%;
+	margin: 20px 0 15px 0;
+	padding: 20px 10px;
+	background: none;
+	border: 1px solid white;
+	border-radius: 6px;
+	font-size: 16px;
+}
+.contact form input:focus,
+.contact form textarea:focus{
+	outline: none;
+}
+
+.contact form button{
+	border-radius: 10px;
+	margin-bottom: 60px;
+}
+
+.contact::after{
+	content: '';
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+/* Footer Section */
+.footer{
+	display: flex;
+	justify-content: space-between;
+	background: rgba(0, 0, 0, .9);
+	padding: 20px 10%;
+}
+
+.footer .list ul{
+	list-style: none;
+	display: flex;
+	padding: 0;
+}
+.footer .list ul li a{
+	color: white;
+	padding: 10px;
+}
+
+.footer .copy{
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+@media all and (max-width: 425px) {
+	/* Header section */
+	header nav{
+		display: block;
+	}
+	header nav img{
+		width: 30%;
+		padding-left: 30px;
+	}
+ 	header nav .menu{
+  	display: none;
+  }
+
+  header .content{
+  	height: 100%;
+  }
+  header .content h2,
+  header .content h2 span{
+  	padding: 100px 0 20px 0;
+  	font-size: 25px;
+  	text-shadow: none;
+  }
+  header .content p{
+  	padding: 0 10%;
+  }
+  header .content button {
+  	margin: 30px 0 50px 0;
+  }
+  button{
+  	padding: 10px 25px;
+  	font-size: 16px;
+  }
+
+  /* Header text */
+  .header-text hr{
+  	width: 15%;
+  }
+  .header-text h2{
+  	font-size: 20px;
+  }
+  .header-text h2::after{
+  	bottom: -60%;
+  }
+
+  /* About Us section */
+  .about .row{
+  	display: block;
+  }
+  .about .row .col1,
+  .about .row .col2{
+  	width: 80%;
+  	margin: auto;
+  	padding: 0;
+  }
+  .about .row .col2 h2{
+  	margin: 20px 0;
+  	font-size: 20px;
+  }
+  
+  .about .common-overlay{
+  	height: 100%;
+  	padding: 50px 0;
+  }
+  .about .common-overlay h2{
+  	font-size: 25px;
+  }
+  .about .common-overlay div{
+  	height: 22px;
+  	width: 22px;
+  	font-size: 20px;
+  }
+
+  /* Services section */
+  .services .header-text{
+  	padding: 25px 0;
+  }
+  .services .header-text hr{
+  	width: 20%;
+  }
+
+  .services .row .col{
+  	width: 80%;
+  	margin: 15px auto;
+  	padding: 0;
+  }
+  .services .row .col span{
+  	padding-bottom: 12px;
+  	font-size: 30px;
+  }
+  .services .row .col p{
+  	font-size: 16px;
+  }
+
+  /* Skill section */
+  .skill{
+  	padding: 30px 10%;
+  }
+  .skill .header-text{
+  	padding: 20px 0;
+  }
+  .skill h3{
+  	margin: 15px 0;
+  	text-align: center;
+  }
+  .skill .text-content{
+  	display: block;
+  }
+  .skill .text-content .left,
+  .skill .text-content .right{
+  	width: 100%;
+  	margin-bottom: 20px;
+  }
+
+  /* Happy Client section */
+  .happy-client{
+  	height: 100%;
+  	padding: 10%;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  }
+  .happy-client .row{
+  	display: block;
+  }
+  .happy-client .row .col{
+  	font-size: 20px;
+  	margin: 20px;
+  }
+
+  /* Portfolio Section */
+  
 }
